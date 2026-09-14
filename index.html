@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09070d">
+  <title>DJ Salva Catalán</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif;
+      background:#08070c; color:#fff; display:flex; justify-content:center;
+      overflow-x:hidden;
+    }
+    body:before{
+      content:""; position:fixed; inset:-20%; z-index:-1;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(255,0,105,.34), transparent 28%),
+        radial-gradient(circle at 10% 65%, rgba(110,0,255,.25), transparent 30%),
+        radial-gradient(circle at 90% 70%, rgba(255,80,0,.18), transparent 28%);
+      filter:blur(35px);
+    }
+    .page{width:100%; max-width:520px; padding:18px 16px 34px}
+    .hero{
+      position:relative; overflow:hidden; border-radius:28px; min-height:560px;
+      background:#17131d; box-shadow:0 20px 70px rgba(0,0,0,.55);
+      border:1px solid rgba(255,255,255,.1);
+    }
+    .hero img{width:100%; height:560px; object-fit:cover; object-position:center top; display:block}
+    .hero:after{
+      content:""; position:absolute; inset:0;
+      background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.18) 55%,rgba(5,4,8,.94) 100%);
+    }
+    .tag{
+      position:absolute; z-index:2; top:18px; left:18px;
+      padding:9px 13px; border-radius:999px; font-size:12px; font-weight:800;
+      letter-spacing:1.5px; background:rgba(10,8,14,.58); border:1px solid rgba(255,255,255,.18);
+      backdrop-filter:blur(10px);
+    }
+    .heroText{position:absolute; z-index:2; left:22px; right:22px; bottom:24px}
+    h1{margin:0; font-size:44px; line-height:.95; letter-spacing:-2px}
+    .sub{margin:10px 0 0; color:#ddd6e2; font-size:15px}
+    .contact{
+      margin-top:16px; padding:22px; border-radius:24px;
+      background:rgba(18,15,24,.82); border:1px solid rgba(255,255,255,.1);
+      backdrop-filter:blur(16px);
+    }
+    .contact h2{margin:0 0 14px; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:#c8bfcc}
+    .buttons{display:grid; gap:11px}
+    a{
+      text-decoration:none; color:#fff; display:flex; align-items:center; justify-content:center;
+      min-height:54px; border-radius:15px; font-weight:800; font-size:16px;
+      border:1px solid rgba(255,255,255,.12); background:#24202b;
+      transition:transform .15s ease, filter .15s ease;
+    }
+    a:active{transform:scale(.98)}
+    .ig{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+    .wa{background:#168f52}
+    .phone{background:#35303e}
+    .mail{background:#35303e}
+    .footer{text-align:center;color:#756d7b;font-size:11px;margin-top:16px}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="tag">DJ • EVENTS • BOOKINGS</span>
+      <img src="dj-salva.jpg" alt="DJ Salva Catalán">
+      <div class="heroText">
+        <h1>DJ Salva<br>Catalán</h1>
+        <p class="sub">¿Hablamos? Contacta conmigo para eventos y sesiones.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contactame</h2>
+      <div class="buttons">
+        <a class="ig" href="https://www.instagram.com/djsalvacatalan/" target="_blank" rel="noopener">Instagram · @djsalvacatalan</a>
+        <a class="wa" href="https://wa.me/34642249807" target="_blank" rel="noopener">WhatsApp · 642 24 98 07</a>
+        <a class="phone" href="tel:+34642249807">Llamar · 642 24 98 07</a>
+        <a class="mail" href="mailto:dj.salvacatalan@gmail.com">Email · dj.salvacatalan@gmail.com</a>
+      </div>
+    </section>
+    <div class="footer">DJ Salva Catalán · Contacto profesional</div>
+  </main>
+</body>
+</html>
